@@ -1,12 +1,13 @@
-# DumbPhone - The SmartPhone Replacement
-==========
+# DumbPhone - The Smart Phone Replacement
+
+
 ### *Harry Maher* ###
 
 A final project for my intro to python class. 
 DumbPhone--*it makes your dumb phone smart!*
 
 
-##*Description*##
+## *Description* ##
 
 A Python program that runs (ideally on a server 24/7) for you to text for information
 that you otherwise only get with a smart phone & data plan.
@@ -16,10 +17,10 @@ It uses Twilio to send/recieve messages.
 ## Why: ##
 - Smartphones = soma/opium. (I recently kicked the habit...)
   - Current apps designed to catch & keep our attention--distracting us from real, important things
-  - This is an attempt at designing a program to that performs useful smartphone functions but won't addict users
-    - Has no "social" media, email, news, dating apps, or games.
+  - Too much screen time bad for mental health, memory, happiness
+  - I made an attempt at designing a program to that performs some useful ("smart") functions but won't addict users
 
-###Instructions ###
+### Instructions ###
 
 Clone this repo:
 ```

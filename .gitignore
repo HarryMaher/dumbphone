@@ -6,3 +6,5 @@ twilio_number.txt
 twilio_sid.txt
 weatherapikey.txt
 log.txt
+.idea
+__pycache__
