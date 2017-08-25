@@ -138,6 +138,3 @@ def map_function(input_string):
             all_directions += (str(a + 1) + ". " + direction_list[a] + "\n")
             a += 1
         return all_directions
-
-
-print(map_function("maps, uw continuing education seattle wa, fplooopiedorps"))

@@ -51,7 +51,7 @@ def get_answer(query):
     tag = re.sub('Try.+?Edit', '', tag)
     tag = re.sub(r'[^a-zA-Z0-9=\/\-\:\.\" ]', '', tag)
     tag = re.sub('\ \-\ ', '-', tag)
-    tag = ' '.join(tag.split())
+    res = ' '.join(tag.split())
 
     # The unit converter requires that you extract the value from a textbox!
     # So it starts all over. Not the most efficient, but works for now...
@@ -70,8 +70,4 @@ def get_answer(query):
         res = ' '.join(res.split())
         return res[0:140]
     else:
-        tag = tag[0:140]
-        return tag
-
-
-print(get_answer("UW continuing education address"))
+        return res[0:140]

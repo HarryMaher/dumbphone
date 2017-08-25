@@ -1,22 +1,26 @@
 #!/usr/bin/python
 
 '''
-# "DumbPhone" #
+# *dumbphone* #
 
 A Python program that runs (ideally on a server 24/7) for you to text for information
 that you otherwise only get with a smart phone & data plan.
 
-Twilio free trial gives a phone number to text
+Twilio - (free trial) gives a phone number to text that essentially gets forwarded to your server
 
 ## Why: ##
-- Smartphones = soma/opium. (I recently kicked the habit...)
-  - Current apps designed to catch & keep our attention--distracting us from real, important things
+- Smartphones = soma/opium. (I recently switched back to a dumb phone...)
+  - Current apps are designed to catch & keep our attention
   - Too much screen time bad for mental health, memory, happiness
   - I made an attempt at designing a program to that performs some useful ("smart") functions but won't addict users
 
 
 
 ## Examples: ##
+
+msg_response = DumbphoneResponse("goog seattle central library hours")
+print(msg_response.dumbphone_responder())
+
 example_list = ["maps, 110 vine street seattle wa, 2200 2nd ave seattle wa", "weather tomorrow",\
 "goog seattle central library hours", "chariot las vegas", "tide", "sun", "cal 8/16", "goog translate aburguesamiento"]
 
@@ -30,8 +34,8 @@ for msg in example_list:
 
 
 ### to do: ###
-- Come up with less dumb name
-- Clean up maps.py - make more concise
+- Come up with less dumb name than dumbphone - dumbnomo' as in dumb no more
+- Clean up maps.py - make more concise by deleting repetitive code
 - Limebike with different android emulator or some other solution -D/l and work android studio?
 - fix all individual other todos
 - Put on server/raspberry pi
