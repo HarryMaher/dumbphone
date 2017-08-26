@@ -13,9 +13,7 @@ save api key elsewhere...
 
 
 requires:
-re
-urllib
-json
+python3
 '''
 
 import re

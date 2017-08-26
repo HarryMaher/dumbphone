@@ -1,9 +1,10 @@
 #!/usr/bin/python
 
 '''
-NOTE BEFORE UPLOADING TO GITHUB:
-Save SID and token in files with .gitignore and return the others.
-And phone numbers!!
+Sends an SMS using twilio. You must sign up for twilio and have your sid stored in twilio_sid.txt
+and an auth token in twilio_auth_token.txt. Store your twilio phone number in twilio_number.txt
+and your phone number in my_cell_number.txt
+
 '''
 
 import os

@@ -20,6 +20,9 @@ print(get_answer("what is 25 feet in meters?"))
 print(get_answer("fan etf price"))
 print(get_answer("flight info NH177"))
 
+requires:
+bs4
+python3
 
 '''
 import requests

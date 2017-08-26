@@ -30,7 +30,7 @@ for msg in example_list:
     msg_response = DumbphoneResponse(msg)
     print(msg_response.dumbphone_responder())
 
-# also: "limebike 1234" ...
+# also: "limebike 1234" ... eventually
 
 
 ### to do: ###
@@ -40,11 +40,20 @@ for msg in example_list:
 - fix all individual other todos
 - Put on server/raspberry pi
 
-requires:
+All requirements:
 python3
 bs4
-re
 requests
+urllib2
+httplib2
+oauth2client
+apiclient
+flask
+twilio
+#limebike requires:
+bluestacks (or other android emulator)
+pyautogui
+
 '''
 import weather
 import chariot

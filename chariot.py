@@ -20,7 +20,6 @@ requires:
 python3
 bs4
 requests
-re
 '''
 
 

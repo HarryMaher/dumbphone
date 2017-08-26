@@ -10,6 +10,10 @@ Or gives tide information for downtown Seattle today.
 To do:
 Future versions can look for other days and by "friday" or "next friday" for Shabbat!
 
+requires:
+bs4
+requests
+
 '''
 import time
 import requests

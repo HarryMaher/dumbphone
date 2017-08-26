@@ -26,9 +26,7 @@ https://maps.googleapis.com/maps/api/directions/json?origin=110+vine+street+seat
 
 
 requires:
-re
-urllib
-json
+python3
 '''
 
 import urllib.request, json

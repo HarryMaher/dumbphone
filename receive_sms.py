@@ -8,8 +8,11 @@ and replies with the response determined by dumbphone.py
 
 Note: this won't send a reply for the Limebike function because that function takes more than
 15 seconds to complete so the server times out - instead it sends a message to the phone notifying
-of if it worked or the bike is broken or whatever
-
+whether it worked or the bike is broken or whatever
+requires:
+python3
+flask
+twilio
 '''
 
 from flask import Flask, request, redirect
