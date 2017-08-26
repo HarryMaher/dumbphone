@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 '''
 Sends an SMS using twilio. You must sign up for twilio and have your sid stored in twilio_sid.txt

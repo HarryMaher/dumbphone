@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 '''
 # *dumbphone* #
@@ -9,8 +9,8 @@ that you otherwise only get with a smart phone & data plan.
 Twilio - (free trial) gives a phone number to text that essentially gets forwarded to your server
 
 ## Why: ##
-- Smartphones = soma/opium. (I recently switched back to a dumb phone...)
-  - Current apps are designed to catch & keep our attention
+- Smartphones = worst & I recently gave mine up
+  - Current apps are designed to catch & keep our attention to deliver useless "content"
   - Too much screen time bad for mental health, memory, happiness
   - I made an attempt at designing a program to that performs some useful ("smart") functions but won't addict users
 
@@ -114,5 +114,6 @@ class DumbphoneResponse():
 
         # Write a log of messages to a .txt file
         with open("log.txt", "a") as f:
-            f.write("({}) \n\nMsg in:\n{} \n\nMsg out:\n{}\n\n".format(self.message_time, self.incoming_text, respond_with))
+            f.write("({})\nMsg in:\n{}\n\nMsg out:\n{}\n\n".format(self.message_time, self.incoming_text, respond_with))
         return respond_with.strip()
+
