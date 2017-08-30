@@ -8,7 +8,7 @@ Gives next sunrise/sunset in Seattle.
 Or gives tide information for downtown Seattle today.
 
 To do:
-Future versions can look for other days and by "friday" or "next friday" for Shabbat!
+Future versions can look for other days like "friday" or "next friday" (for Shabbat!)
 
 requires:
 bs4

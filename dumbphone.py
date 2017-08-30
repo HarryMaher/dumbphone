@@ -3,16 +3,18 @@
 '''
 # *dumbphone* #
 
-A Python program that runs (ideally on a server 24/7) for you to text for information
+A Python program that runs on a server for you to text for information
 that you otherwise only get with a smart phone & data plan.
 
-Twilio - (free trial) gives a phone number to text that essentially gets forwarded to your server
+receive_sms.py should be running on a server and connected to your Twilio account
+That then replies to texts with responses determined by dumbphone.py
+
 
 ## Why: ##
 - Smartphones = worst & I recently gave mine up
   - Current apps are designed to catch & keep our attention to deliver useless "content"
   - Too much screen time bad for mental health, memory, happiness
-  - I made an attempt at designing a program to that performs some useful ("smart") functions but won't addict users
+  - I made an attempt at writing a program to that performs some useful ("smart") functions but won't addict users
 
 
 
@@ -43,7 +45,7 @@ for msg in example_list:
 All requirements:
 python3
 bs4
-requests
+lxml
 urllib2
 httplib2
 oauth2client
@@ -62,7 +64,7 @@ import maps
 import my_calendar
 import limebike
 import googl
-import help
+import txt_help
 import time
 
 menu_options = "DumbPhone Menu:\n1.Weather\n2.Calendar\n3.Maps\n4.Limebike\n5.Chariot\n6.Tides\n7.Sun\n8.Goog"
@@ -86,7 +88,7 @@ class DumbphoneResponse():
             if len(full_text.split(" "))<2:
                 respond_with = menu_options
             else:
-                respond_with = help.helperfunc(full_text.split(" ")[1])
+                respond_with = txt_help.helperfunc(full_text.split(" ")[1])
         elif text[:1]=="1" or text[:1]=="w":
             respond_with = weather.weather_function(full_text)
         elif text[:1]=="2" or text[:3]=="cal":
@@ -116,4 +118,3 @@ class DumbphoneResponse():
         with open("log.txt", "a") as f:
             f.write("({})\nMsg in:\n{}\n\nMsg out:\n{}\n\n".format(self.message_time, self.incoming_text, respond_with))
         return respond_with.strip()
-
